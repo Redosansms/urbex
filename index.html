@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbex Locations</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #ccc;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+            position: relative;
+        }
+        
+        .urbex-title {
+            color: #fff;
+            font-size: 2.5rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin: 20px 0;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .urbex-title::after {
+            content: "···";
+            letter-spacing: normal;
+            position: absolute;
+            right: -30px;
+            bottom: 10px;
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+        
+        .urbex-title::before {
+            content: "···";
+            letter-spacing: normal;
+            position: absolute;
+            left: -30px;
+            bottom: 10px;
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+        
+        .typewriter {
+            color: #fff;
+            font-size: 1.5rem;
+            border-right: 2px solid #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        
+        .category {
+            margin-bottom: 40px;
+        }
+        
+        .category-title {
+            color: #fff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .location {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #333;
+        }
+        
+        .location-title {
+            color: #fff;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        
+        .location-distance {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .map-wrapper {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        iframe {
+            display: block;
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+        
+        .urbex-photo {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #333;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            color: #666;
+            font-size: 0.8em;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="urbex-title">URBEX</div>
+            <div id="typewriter" class="typewriter"></div>
+        </header>
+        
+        <div class="category">
+            <h2 class="category-title">Annet-sur-Marne</h2>
+            
+            <div class="location">
+                <h3 class="location-title">URBEX BUNKER</h3>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1754090270506!6m8!1m7!1sCAoSHENJQUJJaEJzV2hfTUtCelVzLUdHYXlleHg2TGU.!2m2!1d48.91203597204658!2d2.690271960047377!3f353.00204823431744!4f-19.13303651025565!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="location">
+                <h3 class="location-title">LE TRACTEUR</h3>
+                <img src="phototracteur.jpg" alt="Le Tracteur abandonné" class="urbex-photo">
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d553.3063972778141!2d2.6841949003256853!3d48.92690659378502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61a295cf6cc8d%3A0x368d5af64e41cccc!2s3%20Chem.%20des%20Vergers%2C%2077410%20Annet-sur-Marne!5e1!3m2!1sfr!2sfr!4v1754091082855!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2 class="category-title">Claye-Souilly</h2>
+            
+            <div class="location">
+                <h3 class="location-title">LIEU SECRET</h3>
+                <div class="location-distance">À 0 km de Claye-Souilly (localisation exacte)</div>
+                <img src="randomurbex.png" alt="Lieu secret à Claye-Souilly" class="urbex-photo">
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1315.982413889987!2d2.6798764243540063!3d48.927263081443215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6199a9c705845%3A0x40b82c3688c5ec0!2s77410%20Claye-Souilly!5e1!3m2!1sfr!2sfr!4v1754091798000!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2 class="category-title">En Voiture</h2>
+            
+            <div class="location">
+                <h3 class="location-title">MINE</h3>
+                <div class="location-distance">À environ 15 km de Claye-Souilly</div>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d391.14666164598475!2d2.677887005522018!3d48.93967399171698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6111e1ed9a94d%3A0x54d45ba162dedb79!2sCarri%C3%A8re%20de%20Gagny!5e1!3m2!1sfr!2sfr!4v1754095519423!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="location">
+                <h3 class="location-title">USINE</h3>
+                <div class="location-distance">À environ 18 km de Claye-Souilly</div>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29823.230346664037!2d2.7076458797737173!3d48.85016728061137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6035835b78587%3A0x58f213b54919876c!2sLe%20G%C3%A9nitoy%2C%2077600%20Bussy-Saint-Georges!5e1!3m2!1sfr!2sfr!4v1754095682748!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="location">
+                <h3 class="location-title">FERME</h3>
+                <div class="location-distance">À environ 12 km de Claye-Souilly</div>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1754095959513!6m8!1m7!1sSYSwEv3YHqqhjYC5XjvGWg!2m2!1d48.83596886037044!2d2.728942551948824!3f16.39901324386513!4f-0.7038032410135884!5f1.315287748724724" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Exploration urbaine - Ne pas reproduire sans autorisation</p>
+        </footer>
+    </div>
+
+    <script>
+        // Effet typewriter amélioré
+        function typeWriterEffect() {
+            const element = document.getElementById('typewriter');
+            const texts = [
+                "URBEX BUNKER", 
+                "LE TRACTEUR", 
+                "LIEU SECRET",
+                "MINE",
+                "USINE",
+                "FERME",
+                "EXPLORATION URBAINE",
+                "LOCATIONS CACHÉES"
+            ];
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingSpeed = 100;
+            
+            function type() {
+                const currentText = texts[textIndex];
+                
+                if (isDeleting) {
+                    element.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                    typingSpeed = 50;
+                } else {
+                    element.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                    typingSpeed = 100;
+                }
+                
+                if (!isDeleting && charIndex === currentText.length) {
+                    typingSpeed = 2000; // Pause à la fin
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    typingSpeed = 500; // Pause avant nouveau mot
+                }
+                
+                setTimeout(type, typingSpeed);
+            }
+            
+            // Démarrer l'effet
+            type();
+        }
+        
+        // Démarrer l'effet après le chargement de la page
+        window.onload = typeWriterEffect;
+    </script>
+</body>
+</html>
